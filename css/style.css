@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Yusei Magic', sans-serif;
 }
 
-body{
+body {
     background: url(/img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body{
     background-position: center;
 }
 
-#invitado{
+#invitado {
     background: url(/img/bginvitado.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body{
     background-position: center;
 }
 
-#login{
+#login {
     background: url(/img/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ body{
     background-position: center;
 }
 
-#faq{
+#faq {
     background: url(/img/sheepbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body{
     background-position: center;
 }
 
-#general{
+#general {
     background: url(/img/bg4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body{
     background-position: center;
 }
 
-#cartas{
+#cartas {
     background: url(/img/bg3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ body{
 
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 10px 30px;
     background: #FFBC29;
@@ -66,38 +66,38 @@ body{
     border: none;
     cursor: pointer;
     transition: .3s;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     text-shadow: 2px 2px 1px #68370C;
     font-size: 18px;
     margin-left: 20px;
 }
 
-.btn a{
+.btn a {
     text-decoration: none;
     color: white;
 }
 
 
 
-.btn:hover{
+.btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
 }
 
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 10%;
     background: transparent;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     backdrop-filter: blur(10px);
     margin-bottom: 20px;
-} 
+}
 
-.form-container{
-    background: rgba(0,0,0,.7);
+.form-container {
+    background: rgba(0, 0, 0, .7);
     backdrop-filter: blur(10px);
     padding: 50px 60px;
     border-radius: 10px;
@@ -106,12 +106,12 @@ body{
     color: white;
 }
 
-.form-container h1{
+.form-container h1 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.form-container input{
+.form-container input {
     width: 100%;
     padding: 10px 20px;
     margin-bottom: 20px;
@@ -121,14 +121,14 @@ body{
     text-align: center;
 }
 
-.form-container label{
+.form-container label {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
     display: block;
 }
 
-.form-container input[type="submit"]{
+.form-container input[type="submit"] {
     background: #FFBC29;
     color: white;
     font-size: 18px;
@@ -136,28 +136,28 @@ body{
     text-align: center;
 }
 
-.form-container input[type="submit"]:hover{
+.form-container input[type="submit"]:hover {
     background: #FF9C00;
 }
 
-.texto{
+.texto {
     width: 500px;
 }
 
-footer{
-    background: rgba(0,0,0,.7);
+footer {
+    background: rgba(0, 0, 0, .7);
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     height: 100px;
 }
 
-.contenedor{
+.contenedor {
     display: flex;
     align-items: center;
     width: 100%;
@@ -165,17 +165,17 @@ footer{
     margin-top: 10px;
     border-radius: 10px;
     padding: 0 10%;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
     transform: translate(0%, 30%);
 }
 
-.icono{
+.icono {
     position: absolute;
     bottom: 70%;
     left: 0;
 }
 
-.back-container{
+.back-container {
     background: #65677C;
     color: white;
     padding: 20px 30px;
@@ -186,7 +186,7 @@ footer{
     border: 4px solid #FFBC29;
 }
 
-.front-container{
+.front-container {
     background: #FFBC29;
     color: white;
     padding: 20px 0px;
@@ -196,13 +196,13 @@ footer{
     padding: 20px 30px;
 }
 
-.back-container h1{
+.back-container h1 {
     margin-bottom: 20px;
 }
 
 
 
-.main-container{
+.main-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,27 +210,27 @@ footer{
     background: transparent;
 }
 
-table{
+table {
     width: 100%;
     border-collapse: collapse;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
     backdrop-filter: blur(10px);
     color: white;
     border-radius: 10px;
 }
 
-td{
+td {
     padding: 20px 10px;
     text-align: center;
     border-bottom: 1px solid #FFBC29;
 }
 
-td:hover{
+td:hover {
     background: #FFBC29;
     color: white;
 }
 
-.front-container div{
+.front-container div {
     margin-bottom: 20px;
     border: 2px solid #4779C9;
     border-radius: 10px;
@@ -241,7 +241,7 @@ td:hover{
     background-color: #4779C9;
 }
 
-.front-container div:hover{
+.front-container div:hover {
     background: #68370C;
     color: white;
     border: 2px solid #FFBC29;
@@ -251,13 +251,14 @@ td:hover{
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
 
 
-.logo{
+.logo {
     animation: 1s ease-out 0s 1 bounceIn infinite;
 }
 
@@ -265,23 +266,97 @@ td:hover{
     0% {
         transform: scale(0);
     }
+
     50% {
         transform: scale(1.2);
     }
+
     100% {
         transform: scale(1);
     }
 }
 
-.enlaces a{
+.enlaces a {
     text-decoration: none;
     color: white;
     margin-left: 20px;
 }
 
-#index{
+#index {
     position: absolute;
     bottom: 0;
     left: 0;
     transform: translate(0%, 0%);
+}
+
+#index p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+.carta {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transform: translate(120%, 0%);
+    transition: all .3s;
+}
+
+.button-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    transform: translate(620%, 0%);
+}
+
+.button-cards:hover {
+    transform: translate(620%, 0%);
+}
+
+.carta img {
+    width: 50%;
+    height: 100%;
+    margin-left: 80px;
+}
+
+.favorite {
+    position: absolute;
+    left: 300px;
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s;
+    filter: grayscale(100%);
+    width: 200px;
+    right: 0;
+    top: -40px;
+}
+
+.favorite img {
+    margin: 0;
+}
+
+.carta #elixir {
+    background: url("/img/Elixir.jpg.webp");
+    background-attachment: fixed;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-weight: bold;
+    background-position: center;
+    background-size: cover;
 }

@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7f15c3a680.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/htmlincludejs" defer></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+    <include src="/headerFooter/metas.html"></include>
     <title>FAQ</title>
 </head>
+
 <body id="faq">
     <include src="/headerFooter/header.html"></include>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
+    <div class="accordion accordion-flush my-5" id="accordionFlushExample">
+        <div class="accordion-item ">
             <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                    Que es RoyaleReport?
+                    What is RoyaleReport?
                 </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body fw-bold ">
-                    RoyaleReport es una app que te permite ver las cartas del juego Clash Royale, ver sus
-                    estadisticas, ver los mejores mazos y ver las noticias del juego.
-                    Ademas puedes ver tus propias estadisticas y las de tus amigos.
+                    RoyaleReport is an app that allows you to view Clash Royale cards, check their statistics, see the
+                    best decks, and read the game news. Additionally, you can view your own statistics and those of your
+                    friends.
                 </div>
             </div>
         </div>
@@ -36,14 +30,14 @@
             <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseOne">
-                    Que pasa si no tengo amigos?
+                    What if I don't have friends?
                 </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body fw-bold ">
-                    No te preocupes, puedes ver las estadisticas de cualquier jugador de Clash Royale, solo tienes que
-                    buscar su nombre de usuario.
+                    Don't worry, you can view the statistics of any Clash Royale player; you just need to search for
+                    their username.
                 </div>
             </div>
         </div>
@@ -51,33 +45,63 @@
             <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseOne">
-                    Que pasa si no me registro?
+                    What if I don't register?
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body fw-bold ">
-                    No podras linkear tu cuenta de usuario de Clash Royale con la app, por lo que no podras ver los
-                    proximos cofres que te tocaran.
+                    You won't be able to link your Clash Royale user account with the app, so you won't be able to see
+                    the upcoming chests you'll receive.
                 </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFour" aria-expanded="true"
-                    aria-controls="flush-collapseFour">
-                    Donde encuentro mi PlayerTag?
+                    data-bs-target="#flush-collapseFour" aria-expanded="true" aria-controls="flush-collapseFour">
+                    Where do I find my PlayerTag?
                 </button>
             </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body fw-bold ">
-                    <img src="./img/PlayerTag1.png" class="img-fluid rounded-top my-2" width="300" alt="">
+                    <img src="/img/PlayerTag1.png" class="img-fluid rounded-top my-2" width="300" alt="">
                 </div>
             </div>
         </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="true" aria-controls="flush-collapseFive">
+                    How can I contact the app creator?
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fw-bold ">
+                    To contact the app creator, you can send a message to the following email:
+                    <a href="mailto:prlazaron01@iesalbarregas.es">prlazaron01@iesalbarregas.es</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix" aria-expanded="true" aria-controls="flush-collapseSix">
+                    Are there more social media accounts for the app?
+                </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fw-bold ">
+                    Currently, the app only has GitHub, but more social media will be added in the future. The GitHub
+                    link is as follows:
+                    <a href="https://github.com/Pedrop19">@Pedrop19</a>
+                </div>
+            </div>
     </div>
-    <include src="/headerFooter/footer.html"></include>
+        <include src="/headerFooter/footer.html"></include>
 </body>
+
 </html>
