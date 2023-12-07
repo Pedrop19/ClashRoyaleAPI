@@ -76,11 +76,15 @@ async function fetchData() {
             `;
   
             cardsContainer.appendChild(cardElement);
+            let userActive = localStorage.getItem('user');
+
+            if(userActive){
   
             let favoriteElement = cardElement.querySelector(".favorite");
   
             favoriteElement.addEventListener("click", () => {
               let card = cards.find(card => card.id == selectElement.value);
+              if(!card.favorite) {
               dbPromise.then(db => {
                 let tx = db.transaction('cards', 'readwrite');
                 let store = tx.objectStore('cards');
@@ -106,14 +110,34 @@ async function fetchData() {
               } else {
                 favoriteElement.style.filter = "grayscale(0%)";
               }
+            }else{
+              dbPromise.then(db => {
+                card = cards.find(card => card.id == selectElement.value);
+                let tx = db.transaction('cards', 'readwrite');
+                let store = tx.objectStore('cards');
+                let request = store.delete(card.id);
+
+                request.onsuccess = function () {
+                  console.log('Carta eliminada');
+                  window.location.reload();
+                };
+              }).catch(error => {
+                console.error('Error opening database:', error);
+              });
+            }
             });
+          }else{
+            let favoriteElement = cardElement.querySelector(".favorite");
+            favoriteElement.addEventListener("click", () => {
+              alert("You must be logged in to add favorites");
+            });
+          }
+            
           });
         };
       }).catch(error => {
         console.error('Error opening database:', error);
       } );
-
-        
     }
   } catch (error) {
     console.log(error);
@@ -121,3 +145,4 @@ async function fetchData() {
 }
 
 fetchData();
+

@@ -53,7 +53,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-
+    
 }
 
 .btn {
@@ -210,6 +210,7 @@ footer {
     background: transparent;
 }
 
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -359,4 +360,12 @@ footer p a {
     font-weight: bold;
     background-position: center;
     background-size: cover;
+}
+
+.btn-favoritos{
+    transform: translate(215%, 0%);
+}
+
+.btn-favoritos:hover{
+    transform: translate(215%, 0%);
 }

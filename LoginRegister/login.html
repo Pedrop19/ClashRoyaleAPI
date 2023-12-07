@@ -3,10 +3,27 @@
 <head>
     <script src="https://unpkg.com/htmlincludejs" defer></script>
     <include src="/headerFooter/metas.html"></include>
+    <script src="/js/login.js" defer></script>
+    <script src="/js/general.js" defer></script>
     <title>Login</title>
 </head>
 <body id="login">
-    <include src="/headerFooter/header.html"></include>
+    <nav class="navbar nvb navbar-expand-md navbar-light p-0 m-0 w-100 shadow">
+        <div class="container imagen">
+            <a class="navbar-brand" href="/index.html"> <img src="/img/logo.png" width="300"
+                    class="img-fluid rounded-top logo" alt=""></a>
+            <div class="container text-center d-flex align-items-end vw-100 justify-content-end ">
+                <button type="button" class="btn btn-primary" id="btn-logearse"><a href="/LoginRegister/login.html">Login</a></button>
+                <button type="button" class="btn btn-primary" id="btn-registros"><a
+                        href="/LoginRegister/registro.html">Register</a></button>
+                        <button type="button" class="btn btn-primary d-none" id="btn-perfil"><a href="/Profile/profile.html">Profile</a></button>
+                        <button type="button" class="btn btn-primary d-none" id="btn-mazo">My Maze</button>
+                <button type="button" class="btn btn-primary d-none" id="btn-favoritos"><a href="/Datos/favoritos.html">Favorites</a></button>
+                <button type="button" class="btn btn-primary"><a href="/Datos/faq.html">FAQ</a></button>
+                <button type="button" class="btn btn-primary d-none" id="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
     <div class="container d-flex vw-100  align-items-center justify-content-center ">
         <form action="">
             <div class="form-container container  shadow  d-flex flex-column align-items-center justify-content-center">
@@ -29,7 +46,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <button class="btn btn-primary">Login</button>
+                        <button class="btn btn-primary btn-logear">Login</button>
                         <button class="btn btn-primary"><a href="/index.html">Back</a></button>
                     </div>
                 </div>
