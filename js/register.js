@@ -54,9 +54,10 @@ btnregistrar.addEventListener('click', () => {
         let store = tx.objectStore('users');
         store.add(player);
         return tx.complete;
+        window.location.href = '/index.html';
     }).then(() => {
         console.log('Player added');
-        window.location.href = '../index.html';
+        
     }).catch(error => {
         console.log(error);
     });
